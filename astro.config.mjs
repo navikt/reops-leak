@@ -3,9 +3,13 @@ import node from '@astrojs/node';
 
 
 
+import tailwind from '@astrojs/tailwind';
+
+
+
 // https://astro.build/config
 export default defineConfig({
-    integrations: [],
+    integrations: [tailwind()],
     site: 'https://leak.ansatt.nav.no',
     output: 'hybrid',
     adapter: node({
