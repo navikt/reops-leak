@@ -1,8 +1,10 @@
 ---
 import Layout from '../layouts/corelayout.astro';
+
+import Velkommen from "../components/velkommen.tsx";
 ---
 
 <Layout title="Astro Hjem">
 	<h1>Astro</h1>
-	<a href="/about">Om Astro</a>
+	<Velkommen client:load  />
 </Layout>
