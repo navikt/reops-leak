@@ -639,6 +639,11 @@
   resolved "https://registry.yarnpkg.com/@navikt/ds-css/-/ds-css-7.0.1.tgz#aa975b0014976ba552205e4fbd5ff68b886d6b93"
   integrity sha512-IAgJ2AessJbul3JE3DWq2AIfn7MgaF+sZg6W6+ren/S/X5o88KwrqWMqYCxcSf0xaRd9ceVLmJ6W5QOt9fJ4wQ==
 
+"@navikt/ds-tailwind@^7.0.1":
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/@navikt/ds-tailwind/-/ds-tailwind-7.0.1.tgz#268f21f61aa119280f49df0c21c833fa1601220a"
+  integrity sha512-5B+hWU7plgDfRnmk13HL+A1zX96xCJiE354mi4ds83TVKYI7Bx2oKDa3T9RlnizrLbL4p7MSY5+4SqQW6G4C9w==
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
