@@ -5,7 +5,11 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-    integrations: [tailwind()],
+    integrations: [
+        tailwind({
+            applyBaseStyles: false,
+        }),
+    ],
     site: 'https://leak.ansatt.nav.no',
     output: 'hybrid',
     adapter: node({
