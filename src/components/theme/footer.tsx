@@ -20,7 +20,7 @@ const Footer = () => {
 };
 
 function LogoBlock() {
-    let headerText = 'Leak'; // Default text
+    let headerText = 'Lekk'; // Default text
     return (
         <div>
             <span className="mt-4 text-2xl whitespace-nowrap">{headerText}</span>
@@ -31,14 +31,14 @@ function LogoBlock() {
 }
 
 function Snarveier() {
-    let headerText = 'Leak'; // Default text
+    let headerText = 'Lekk'; // Default text
     return (
         <div>
             <Heading level="2" size="xsmall">
                 Om nettstedet
             </Heading>
             <BodyShort as="ul" className="mt-3 grid gap-3">
-                <FooterLink href="/about">
+                <FooterLink href="/om">
                     Hva er {headerText}?
                 </FooterLink>
                 <FooterLink href="https://github.com/navikt/reops-leak">

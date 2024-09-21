@@ -29,3 +29,4 @@ spec:
     cpuThresholdPercentage: 80
   ingresses:
     - "https://leak.ansatt.nav.no"
+    - "https://lekk.ansatt.nav.no"
