@@ -4,14 +4,17 @@ import Layout from '../layouts/corelayout.astro';
 
 <Layout>
 	<h1>Velkommen til Lekk</h1>
-	<p class="max-w-prose mb-4">Velg en profil for å se detaljer:</p>
+	<p class="mb-4 font-semibold">Velg en profil for å se detaljer:</p>
 	<ul class="list-inside list-disc">
-		<li><a href="/profil/ola-nordmann/24031510135?name=ola-nordmann&fnr=24031510135&utm_source=24031510135&utm_medium=24031510135&utm_campaign=24031510135">Profilside Ola Nordmann</a></li>
-		<li><a href="/profil/kari-nordmann/23031510135?name=ola-nordmann&fnr=23031510135&utm_source=23031510135&utm_medium=23031510135&utm_campaign=23031510135">Profilside Kari Nordmann</a></li>
+		<li><a href="/profil/ola-nordmann/24031510135?name=ola-nordmann&fnr=24031510135&utm_source=24031510135&utm_medium=24031510135&utm_campaign=24031510135">Ola Nordmann (fnr: 240315 10135)</a></li>
+		<li><a href="/profil/kari-nordmann/23031510135?name=ola-nordmann&fnr=23031510135&utm_source=23031510135&utm_medium=23031510135&utm_campaign=23031510135">Kari Nordmann (fnr: 230315 10135)</a></li>
 	</ul>
 
+	<p class="mb-4 mt-8 font-semibold">Slik fungerer Lekk:</p>
+	<p class="max-w-prose leading-relaxed">Når du går inn på en av profilene, logges besøket til analyseverktøyene Amplitude og Umami. Ettersom profilsidene er laget etter værste praksis sender den i utgangspunktet med både navn og FNR i loggen. Vi har bygget en proxy som forsøker å filtrere bort persondata, med Lekk kan vi sjekke hvor godt filteret fungerer.</p>
 
-	<p class="max-w-prose mb-4 mt-8">Tilkoblede analyseverktøy:</p>
+
+	<p class="mb-4 mt-8 font-semibold">Tilkoblede analyseverktøy:</p>
 	<ul class="list-inside list-disc">
 		<li><a href="https://app.eu.amplitude.com/analytics/nav/space/product-analytics/product-overview?app=100008939">Amplitude</a></li>
 		<li><a href="https://umami.ansatt.nav.no/share/pYHYL85MeTxivZtg/leak.ansatt.nav.no">Umami</a></li>
