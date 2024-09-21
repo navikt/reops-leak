@@ -1,6 +1,6 @@
 FROM gcr.io/distroless/nodejs20-debian12
 
-WORKDIR usr/src/app
+WORKDIR /usr/src/app
 COPY . .
 
 ENV HOST=0.0.0.0
