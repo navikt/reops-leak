@@ -1,6 +1,6 @@
-# Reops Leak
+# Reops Lekk (lekkasjetester)
 
-Reops test app
+En app for å teste hvordan analyseverktøy som Amplitude og Umami håndterer syntetisk persondata på avveie.
 
 # Henvendelser og veiledning
 
