@@ -42,7 +42,7 @@ function Snarveier() {
                     Hva er {headerText}?
                 </FooterLink>
                 <FooterLink href="https://github.com/navikt/reops-leak">
-                    Kode på Github
+                    Lekk på Github
                 </FooterLink>
             </BodyShort>
         </div>
