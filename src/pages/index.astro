@@ -6,15 +6,15 @@ import AkselLink from "../components/mixed/AkselLink.astro";
 
 <Layout description="En app for å teste hvordan analyseverktøy som Amplitude og Umami håndterer syntetisk persondata på avveie">
 	<h1>Velkommen til Lekk</h1>
-	<p class="mb-4 font-semibold">Velg en testvariant</p>
+	<p class="mb-4 font-semibold">Besøk en profil eller prøv søket</p>
 	<ul class="list-inside list-disc leading-relaxed">
 		<li><AkselLink href="/profil/kari-nordmann/23031510135?name=kari-nordmann&fnr=23031510135&utm_source=23031510135&utm_medium=23031510135&utm_campaign=23031510135" text="Kari Nordmann (fnr: 230315 10135)" /></li>
 		<li><AkselLink href="/profil/ola-nordmann/24031510135?name=ola-nordmann&fnr=24031510135&utm_source=24031510135&utm_medium=24031510135&utm_campaign=24031510135" text="Ola Nordmann (fnr: 240315 10135)" /></li>
-		<li><AkselLink href="/sok" text="Søkeboks / fritekstfelt" /></li>
+		<li><AkselLink href="/sok" text="Søk (fritekstfelt)" /></li>
 	</ul>
 
 	<p class="mb-4 mt-8 font-semibold">Slik fungerer Lekk</p>
-	<p class="max-w-prose leading-relaxed">Når du går inn på en av testvariantene, logges besøket til analyseverktøyene Amplitude og Umami. Ettersom Lekk nettsiden er laget etter værste praksis sender den i utgangspunktet med både (syntetiske) navn og FNR i loggen. Vi har bygget en proxy som forsøker å filtrere bort persondata, med Lekk kan vi sjekke hvor godt filteret fungerer.</p>
+	<p class="max-w-prose leading-relaxed">Når du besøker en av profilene eller søket, registreres besøket i analyseverktøyene Amplitude og Umami. Lekk nettsiden sender opprinnelig med både (syntetiske) navn og fødselsnummer, men vi har laget en proxy som prøver å fjerne persondata. Med Lekk kan vi teste hvor godt denne filtreringen fungerer.</p>
 
 	<Analyticsdetails />
 </Layout>
