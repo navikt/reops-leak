@@ -3,6 +3,7 @@ import { Search } from "@navikt/ds-react";
 import Layout from '../layouts/corelayout.astro';
 import AkselAlert from "../components/mixed/AkselAlert.tsx";
 import AkselLink from '../components/mixed/AkselLink.astro';
+import Analyticsdetails from "../components/mixed/analyticsdetails.astro";
 ---
 
 <Layout title="Event">
@@ -30,6 +31,8 @@ import AkselLink from '../components/mixed/AkselLink.astro';
 		<li><AkselLink target="_blank" href="https://app.eu.amplitude.com/analytics/nav/chart/e-xlg67v1d" text="Finn i Amplitude" /></li>
 		<li><AkselLink target="_blank" href="https://umami.ansatt.nav.no/share/pYHYL85MeTxivZtg/leak.ansatt.nav.no?view=query" text="Finn i Umami" /></li>
 	</ul>
+
+	<Analyticsdetails />
 </Layout>
 
 <script>
