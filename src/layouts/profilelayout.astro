@@ -5,6 +5,7 @@ import Header from '../components/theme/header.tsx';
 import Footer from '../components/theme/footer.tsx';
 import Akselalert from '../components/mixed/AkselAlert.tsx';
 import Analyticsdetails from "../components/mixed/analyticsdetails.astro";
+import AkselLink from "../components/mixed/AkselLink.astro";
 
 interface Props {
     title?: string;
@@ -62,6 +63,12 @@ const firstName = name ? getFirstName(name) : '';
     <ul class="list-inside list-disc mt-4 leading-relaxed">
         <li>Title: "Lekk - {name} (fnr: {fnr === '23031510135' ? fnr : formattedFnr})"</li>
         <li>Description: "Lekk - {name} (fnr: {fnr === '23031510135' ? fnr : formattedFnr})"</li>
+    </ul>
+
+    <p class="mt-8 font-semibold">Finn i loggen</p>
+    <ul class="list-inside list-disc mt-4 leading-relaxed">
+        <li><AkselLink href="https://app.eu.amplitude.com/analytics/nav/live-events" text="Finn i Amplitude" /> (NB: Velg Amplitude prosjekt "ReopsLeak - test")</li>
+        <li><AkselLink href="https://umami.ansatt.nav.no/share/pYHYL85MeTxivZtg/leak.ansatt.nav.no?view=url" text="Finn i Umami" /></li>
     </ul>
 
     <Analyticsdetails />
