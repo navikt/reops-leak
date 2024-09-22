@@ -1,5 +1,5 @@
 ---
-const { href, text } = Astro.props;
+const { href, text, target = "_self" } = Astro.props;
 ---
 
-<a class="underline hover:no-underline" href={href}>{text}</a>
+<a class="underline hover:no-underline" href={href} target={target}>{text}</a>

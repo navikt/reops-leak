@@ -10,7 +10,7 @@ import AkselLink from '../components/mixed/AkselLink.astro';
 
 	<form id="search-form" role="search" class="mb-6 max-w-xl">
 		<Search client:load
-			label="Teksten logges til Amplitude og Umami når du søker"
+			label="Søket logges til Amplitude og Umami"
 			variant="primary"
 			id="search-input"
 			hideLabel={false}
@@ -19,10 +19,16 @@ import AkselLink from '../components/mixed/AkselLink.astro';
 
 	<AkselAlert client:load />
 
+	<p class="mt-8 font-semibold">Fiktive data</p>
+	<ul class="list-inside list-disc mt-4 leading-relaxed">
+		<li><AkselLink target="_blank" href="https://norske-testdata.no/fiktivt-fnr/" text="Fiktive fødselsnummer" /></li>
+		<li><AkselLink target="_blank" href="http://navngen.no/" text="Navnegenerator" /></li>
+	</ul>
+
 	<p class="mt-8 font-semibold">Finn i loggen</p>
 	<ul class="list-inside list-disc mt-4 leading-relaxed">
-		<li><AkselLink href="https://app.eu.amplitude.com/analytics/nav/chart/e-xlg67v1d" text="Finn i Amplitude" /></li>
-		<li><AkselLink href="https://umami.ansatt.nav.no/share/pYHYL85MeTxivZtg/leak.ansatt.nav.no?view=query" text="Finn i Umami" /></li>
+		<li><AkselLink target="_blank" href="https://app.eu.amplitude.com/analytics/nav/chart/e-xlg67v1d" text="Finn i Amplitude" /></li>
+		<li><AkselLink target="_blank" href="https://umami.ansatt.nav.no/share/pYHYL85MeTxivZtg/leak.ansatt.nav.no?view=query" text="Finn i Umami" /></li>
 	</ul>
 </Layout>
 
