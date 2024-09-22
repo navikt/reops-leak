@@ -60,8 +60,8 @@ const firstName = name ? getFirstName(name) : '';
 
     <p class="mt-8 font-semibold">Lekkede opplysninger i meta (definert i nettsidens HEAD)</p>
     <ul class="list-inside list-disc mt-4 leading-relaxed">
-        <li>Title: "Lekk - {name} (fnr: {formattedFnr})"</li>
-        <li>Description: "Lekk - {name} (fnr: {formattedFnr})"</li>
+        <li>Title: "Lekk - {name} (fnr: {fnr === '23031510135' ? fnr : formattedFnr})"</li>
+        <li>Description: "Lekk - {name} (fnr: {fnr === '23031510135' ? fnr : formattedFnr})"</li>
     </ul>
 
     <Analyticsdetails />
