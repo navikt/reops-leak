@@ -1,0 +1,39 @@
+---
+import { Search } from "@navikt/ds-react";
+import AlertComponent from "../components/mixed/alert.tsx";
+import Layout from '../layouts/corelayout.astro';
+---
+
+<Layout title="Event">
+	<h1>Søk / fritekstfelt</h1>
+
+	<form id="search-form" role="search" class="mb-6">
+		<Search client:load
+			label="Teksten du skriver inn logges til Amplitude og Umami når du søker"
+			variant="primary"
+			id="search-input"
+			hideLabel={false}
+		/>
+	</form>
+
+	<AlertComponent client:load />
+</Layout>
+
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const form = document.getElementById('search-form');
+		const input = document.getElementById('search-input');
+
+		if (form && input) {
+			form.addEventListener('submit', (event) => {
+				event.preventDefault();
+				// @ts-ignore
+				const query = input.value;
+				const searchParams = new URLSearchParams(window.location.search);
+				searchParams.set('q', query);
+				window.location.href = `?${searchParams.toString()}`;
+			});
+		}
+	});
+</script>
