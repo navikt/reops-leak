@@ -25,7 +25,7 @@ export default function Header() {
     "flex no-underline items-center bg-transparent hover:underline hover:bg-transparent navds-button navds-button--primary navds-button--medium text-white hover:text-white";
   return (
     <header style={{ background: "rgba(19,17,54)" }}>
-      <div className="flex py-1 -ml-2 sm:ml-auto sm:pl-1 z-10 items-center md:w-5/6 max-w-[80rem] m-auto justify-between">
+      <div className="flex py-1 -ml-2 sm:ml-auto sm:pl-1 z-10 items-center sm:w-5/6 max-w-[80rem] m-auto justify-between">
         <div className="flex items-stretch">
           <Link className={linkButton} href="/">
             <span className="text-2xl whitespace-nowrap text-white">
