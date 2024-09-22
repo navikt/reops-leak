@@ -85,12 +85,12 @@
     unist-util-visit-parents "^6.0.1"
     vfile "^6.0.2"
 
-"@astrojs/node@^8.3.3":
-  version "8.3.3"
-  resolved "https://registry.yarnpkg.com/@astrojs/node/-/node-8.3.3.tgz#5d9b745b647f7d6e7d6caf9c902dea2c7bfd2197"
-  integrity sha512-idrKhnnPSi0ABV+PCQsRQqVNwpOvVDF/+fkwcIiE8sr9J8EMvW9g/oyAt8T4X2OBJ8FUzYPL8klfCdG7r0eB5g==
+"@astrojs/node@^8.3.4":
+  version "8.3.4"
+  resolved "https://registry.yarnpkg.com/@astrojs/node/-/node-8.3.4.tgz#c8a9c6ad45af26ae11d18a41ee325f924b6412d2"
+  integrity sha512-xzQs39goN7xh9np9rypGmbgZj3AmmjNxEMj9ZWz5aBERlqqFF3n8A/w/uaJeZ/bkHS60l1BXVS0tgsQt9MFqBA==
   dependencies:
-    send "^0.18.0"
+    send "^0.19.0"
     server-destroy "^1.0.1"
 
 "@astrojs/prism@3.1.0":
@@ -1178,10 +1178,10 @@ array-iterate@^2.0.0:
   resolved "https://registry.yarnpkg.com/array-iterate/-/array-iterate-2.0.1.tgz#6efd43f8295b3fee06251d3d62ead4bd9805dd24"
   integrity sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==
 
-astro@^4.15.7:
-  version "4.15.7"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-4.15.7.tgz#7c5b248581c63f705aab5e8109c90b8777bc862f"
-  integrity sha512-RGZjGpLcR3jcnXA1+g56i73O77krmqs7VjpoBOfk9UVP8Js5T2YSeUBAyComOUb6vj31wEw1vgRgOEN0MzYc8w==
+astro@^4.15.8:
+  version "4.15.8"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-4.15.8.tgz#046190f8c9c719b278c13f5e8e35943bf178a7b2"
+  integrity sha512-pdXjtRF6O1xChiPAUF32R7oVRTW7AK1/Oy/JqPNhLfbelO0l6C7cLdSEuSLektwOEnMhOVXqccetjBs7HPaoxA==
   dependencies:
     "@astrojs/compiler" "^2.10.3"
     "@astrojs/internal-helpers" "0.4.1"
@@ -1229,7 +1229,6 @@ astro@^4.15.7:
     ora "^8.1.0"
     p-limit "^6.1.0"
     p-queue "^8.0.1"
-    path-to-regexp "6.2.2"
     preferred-pm "^4.0.0"
     prompts "^2.4.2"
     rehype "^13.0.1"
@@ -2963,11 +2962,6 @@ path-scurry@^1.11.1:
     lru-cache "^10.2.0"
     minipass "^5.0.0 || ^6.0.2 || ^7.0.0"
 
-path-to-regexp@6.2.2:
-  version "6.2.2"
-  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-6.2.2.tgz#324377a83e5049cbecadc5554d6a63a9a4866b36"
-  integrity sha512-GQX3SSMokngb36+whdpRXE+3f9V8UzyAorlYvOGx87ufGHehNTn5lCxrKtLyZ4Yl/wEKnNnr98ZzOwwDZV5ogw==
-
 picocolors@^1.0.0, picocolors@^1.0.1, picocolors@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.1.0.tgz#5358b76a78cde483ba5cef6a9dc9671440b27d59"
@@ -3364,10 +3358,10 @@ semver@^7.3.8, semver@^7.6.2, semver@^7.6.3:
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.6.3.tgz#980f7b5550bc175fb4dc09403085627f9eb33143"
   integrity sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==
 
-send@^0.18.0:
-  version "0.18.0"
-  resolved "https://registry.yarnpkg.com/send/-/send-0.18.0.tgz#670167cc654b05f5aa4a767f9113bb371bc706be"
-  integrity sha512-qqWzuOjSFOuqPjFe4NOsMLafToQQwBSOEpS+FwEt3A2V3vKubTquT3vmLTQpFgMXp8AlFWFuP1qKaJZOtPpVXg==
+send@^0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/send/-/send-0.19.0.tgz#bbc5a388c8ea6c048967049dbeac0e4a3f09d7f8"
+  integrity sha512-dW41u5VfLXu8SJh5bwRmyYUbAoSB3c9uQh6L8h/KtsFREPWpbX1lrljJo186Jc4nmci/sGUZ9a0a0J2zgfq2hw==
   dependencies:
     debug "2.6.9"
     depd "2.0.0"
