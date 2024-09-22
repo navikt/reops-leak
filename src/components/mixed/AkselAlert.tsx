@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Alert } from "@navikt/ds-react";
+import { Alert, Heading } from "@navikt/ds-react";
 
 interface Props {
     variant?: 'success' | 'info' | 'warning' | 'error';
     children?: React.ReactNode;
 }
 
-export default function AlertComponent({ variant = "success", children }: Props) {
+export default function AkselAlert({ variant = "success", children }: Props) {
     const [query, setQuery] = useState<string | null>(null);
 
     useEffect(() => {
@@ -20,10 +20,12 @@ export default function AlertComponent({ variant = "success", children }: Props)
     }
 
     return (
-        <Alert variant={variant} className="mt-0 mb-8 max-w-fit">
-            Søket ditt har blitt logget til Amplitude og Umami
-            {/*{children}
-            <p>Query: {query}</p>*/}
+        <Alert variant={variant} className="mt-0 mb-8 max-w-md">
+            <Heading spacing size="small" level="3">
+                Logget til Amplitude og Umami
+            </Heading>
+            URL-parameteren "q" er satt til "{query}".
+            {/*{children}*/}
         </Alert>
     );
 }
