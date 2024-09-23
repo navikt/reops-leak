@@ -3,8 +3,8 @@ import Metrics from '../components/metrics.astro';
 import '../styles/global.css';
 import Header from '../components/theme/header.tsx';
 import Footer from '../components/theme/footer.tsx';
-import Akselalert from '../components/mixed/AkselAlert.tsx';
 import Analyticsdetails from "../components/mixed/analyticsdetails.astro";
+import AkselAlert from '../components/mixed/AkselAlert.tsx';
 import AkselLink from "../components/mixed/AkselLink.astro";
 
 interface Props {
@@ -43,7 +43,10 @@ const firstName = name ? getFirstName(name) : '';
 <Header client:load />
 <main class="sm:w-5/6 max-w-[80rem] m-auto px-3 sm:px-6 mb-12 mt-10">
     <h1>{name} (fnr: {formattedFnr})</h1>
-    <Akselalert client:load />
+    <AkselAlert client:load>
+        Besøk logget til Amplitude og Umami
+    </AkselAlert>
+
     <p class="mt-8 font-semibold leading-relaxed">Lekkede opplysninger i URL-sti (eg. /profil/{firstName})</p>
     <ul class="list-inside list-disc mt-4">
         <li>Navn: {name}</li>

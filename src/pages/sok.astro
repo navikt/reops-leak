@@ -1,7 +1,7 @@
 ---
 import { Search } from "@navikt/ds-react";
 import Layout from '../layouts/corelayout.astro';
-import AkselAlert from "../components/mixed/AkselAlert.tsx";
+import SearchSuccess from "../components/mixed/SearchSuccess.tsx";
 import AkselLink from '../components/mixed/AkselLink.astro';
 import Analyticsdetails from "../components/mixed/analyticsdetails.astro";
 ---
@@ -18,7 +18,7 @@ import Analyticsdetails from "../components/mixed/analyticsdetails.astro";
 		/>
 	</form>
 
-	<AkselAlert client:load />
+	<SearchSuccess client:load />
 
 	<p class="mt-8 font-semibold">Fiktive data</p>
 	<ul class="list-inside list-disc mt-4 leading-relaxed">
