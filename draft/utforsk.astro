@@ -1,16 +1,22 @@
 ---
 // Utforsk.astro
-import Layout from '../layouts/corelayout.astro';
-import MetricsTable from '../components/mixed/MetricsTable.astro';
-
-const response = await fetch('https://reops-proxy.intern.nav.no/umami/v2/api/websites/0a0bc436-1eac-45ac-81ab-697ab77ebec1/metrics?range=days&unit=day&timezone=Europe%2FOslo&type=query&search=q');
-const metrics = await response.json();
+import Layout from '../src/layouts/corelayout.astro';
+import MetricsTable from '../src/components/mixed/MetricsTable.astro';
+import fetchMetrics from '../src/components/fetchMetrics.js';
 ---
 
 <Layout title="Om Lekk" description="Utviklet av Team ReserchOps for å teste hvordan analyseverktøy håndterer syntetisk persondata på avveie">
     <h1>Utforsk</h1>
     <MetricsTable metrics={metrics} />
 </Layout>
+
+<script>
+    let metrics;
+
+    (async () => {
+        metrics = await fetchMetrics();
+    })();
+</script>
 
 <style>
     h1 {
