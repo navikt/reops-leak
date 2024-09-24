@@ -1,0 +1,38 @@
+---
+// MetricsTable.astro
+interface Metric {
+    x: string;
+    y: number;
+}
+
+interface Props {
+    metrics: Metric[];
+}
+
+const { metrics } = Astro.props;
+
+// Filter out empty queries and remove 'q=' prefix
+const filteredMetrics = metrics
+    .filter(item => typeof item.x === 'string' && item.x.trim() !== 'q=')
+    .map(item => ({
+        ...item,
+        x: item.x.startsWith('q=') ? item.x.slice(2) : item.x
+    }));
+---
+
+<table class="table-auto max-w-2xl border-collapse border border-gray-200">
+    <thead>
+    <tr>
+        <th class="border border-gray-200 px-4 py-2">Query</th>
+        <th class="border border-gray-200 px-4 py-2">Count</th>
+    </tr>
+    </thead>
+    <tbody>
+    {filteredMetrics.map((metric) => (
+            <tr>
+                <td class="border border-gray-200 px-4 py-2">{metric.x}</td>
+                <td class="border border-gray-200 px-4 py-2">{metric.y}</td>
+            </tr>
+    ))}
+    </tbody>
+</table>

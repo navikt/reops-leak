@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/corelayout.astro';
+---
+
+<Layout title="Om Lekk" description="Utviklet av Team ReserchOps for å teste hvordan analyseverktøy håndterer syntetisk persondata på avveie">
+    <h1>Utforsk</h1>
+    <div class="max-w-2xl"
+            id="metrics-data"
+            hx-get="https://reops-proxy.intern.nav.no/umami/v2/api/websites/0a0bc436-1eac-45ac-81ab-697ab77ebec1/metrics?range=days&unit=day&timezone=Europe%2FOslo&type=query&search=q"
+            hx-trigger="load"
+            hx-swap="innerHTML"
+    ></div>
+
+    <script>
+        document.addEventListener('htmx:afterOnLoad', function(event) {
+            if (event.detail.target.id === 'metrics-data') {
+                const data = JSON.parse(event.detail.xhr.responseText);
+                const table = document.createElement('table');
+                table.classList.add('table-auto', 'w-full', 'border-collapse', 'border', 'border-gray-200');
+
+                const thead = document.createElement('thead');
+                const headerRow = document.createElement('tr');
+                const th1 = document.createElement('th');
+                th1.textContent = 'Query';
+                th1.classList.add('border', 'border-gray-200', 'px-4', 'py-2');
+                const th2 = document.createElement('th');
+                th2.textContent = 'Count';
+                th2.classList.add('border', 'border-gray-200', 'px-4', 'py-2');
+                headerRow.appendChild(th1);
+                headerRow.appendChild(th2);
+                thead.appendChild(headerRow);
+                table.appendChild(thead);
+
+                const tbody = document.createElement('tbody');
+                data.forEach(item => {
+                    if (typeof item.x === 'string' && item.x.trim() !== 'q=') {
+                        const row = document.createElement('tr');
+                        const cell1 = document.createElement('td');
+                        cell1.textContent = item.x.startsWith('q=') ? item.x.slice(2) : item.x;
+                        cell1.classList.add('border', 'border-gray-200', 'px-4', 'py-2');
+                        const cell2 = document.createElement('td');
+                        cell2.textContent = item.y;
+                        cell2.classList.add('border', 'border-gray-200', 'px-4', 'py-2');
+                        row.appendChild(cell1);
+                        row.appendChild(cell2);
+                        tbody.appendChild(row);
+                    }
+                });
+                table.appendChild(tbody);
+
+                event.detail.target.innerHTML = '';
+                event.detail.target.appendChild(table);
+            }
+        });
+    </script>
+</Layout>
