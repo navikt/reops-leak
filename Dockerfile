@@ -1,4 +1,4 @@
-FROM gcr.io/distroless/nodejs20-debian12
+FROM node:lts-alpine
 
 WORKDIR /usr/src/app
 COPY . .
