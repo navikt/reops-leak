@@ -21,10 +21,7 @@ jobs:
           cache: 'yarn'
 
       - name: 'Install dependencies'
-        run: |
-          yarn plugin import interactive-tools
-          yarn install
-          yarn up -R "*" && yarn dedupe
+        run: 'yarn install'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.READER_TOKEN }}
 
