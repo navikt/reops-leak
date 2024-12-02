@@ -22,6 +22,7 @@ jobs:
 
       - name: 'Install dependencies'
         run: |
+          yarn plugin import interactive-tools
           yarn install
           yarn up -R "*" && yarn dedupe
         env:
