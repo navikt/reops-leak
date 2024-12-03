@@ -10,11 +10,8 @@ export default defineConfig({
         applyBaseStyles: false,
     }), react(), htmx()],
     site: 'https://leak.ansatt.nav.no',
-    output: 'hybrid',
+    output: 'static',
     adapter: node({
         mode: 'standalone',
     }),
-    experimental: {
-        serverIslands: true
-    },
 });
