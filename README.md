@@ -1,6 +1,6 @@
 # Reops Lekk (lekkasjetest app)
 
-En app for å teste hvordan analyseverktøy som Amplitude og Umami håndterer syntetisk persondata.
+En app for å teste hvordan analyseverktøy som Amplitude og Umami håndterer syntetisk persondata (PII).
 
 Team Researchops, med hjelp fra flere, har [laget en proxy app](https://github.com/navikt/amplitude-proxy) som fjerne ulike typer persondata. Med Lekk kan vi teste hvor godt denne filtreringen fungerer.
 
