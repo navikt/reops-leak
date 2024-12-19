@@ -59,10 +59,10 @@
     vscode-html-languageservice "^5.2.0"
     vscode-uri "^3.0.8"
 
-"@astrojs/markdown-remark@6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/markdown-remark/-/markdown-remark-6.0.0.tgz#bf0a4e97bd71685e27f9f36cc103239d99fbe83e"
-  integrity sha512-Tabo7xM44Pz2Yf9qpdaCCgxRmtaypi2YCinqTUNefDrWUa+OyKW62OuNeCaGwNh/ys+QAd9FUWN5/3HgPWjP4Q==
+"@astrojs/markdown-remark@6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@astrojs/markdown-remark/-/markdown-remark-6.0.1.tgz#6bffdebbf7a802b85a0c3795c5f02de49d8a5334"
+  integrity sha512-CTSYijj25NfxgZi15TU3CwPwgyD1/7yA3FcdcNmB9p94nydupiUbrIiq3IqeTp2m5kCVzxbPZeC7fTwEOaNyGw==
   dependencies:
     "@astrojs/prism" "3.2.0"
     github-slugger "^2.0.0"
@@ -1258,14 +1258,14 @@ astro-htmx@^1.0.6:
   resolved "https://registry.npmjs.org/astro-htmx/-/astro-htmx-1.0.6.tgz"
   integrity sha512-CSpII8wU5hsz1Q6abkKRGImOoQB+tVflZlh4wEc/lsZk4y3Mq9Z4sS9ehRvceg4UkY+6Pt64g8EOOdCCtQOBww==
 
-astro@5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-5.0.2.tgz#fa6a14cde19f217c8b16ec8a2622622085e2749b"
-  integrity sha512-MKf82vUiTZ2aK+c/8EDnLYIsToBdVVk4PuhhGdE8F/PcuUyS+oIcuCPf30iVf8WCQwXOfnYGnv1JbRjzkqUc3w==
+astro@5.0.8:
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-5.0.8.tgz#f58799735edbdc7563abe6822df0c559fc58dfcd"
+  integrity sha512-nW4TmRCeG3t2iDmm91KPvYpYNljNfjeaneN4BX463DKAZ3MPmUn92aKefOXC0bjMHQ2Gamc8MIZ6sORS2EhyAQ==
   dependencies:
     "@astrojs/compiler" "^2.10.3"
     "@astrojs/internal-helpers" "0.4.2"
-    "@astrojs/markdown-remark" "6.0.0"
+    "@astrojs/markdown-remark" "6.0.1"
     "@astrojs/telemetry" "3.2.0"
     "@oslojs/encoding" "^1.1.0"
     "@rollup/pluginutils" "^5.1.3"
