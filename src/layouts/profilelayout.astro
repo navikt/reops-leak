@@ -1,5 +1,6 @@
 ---
 import Metrics from '../components/metrics.astro';
+import Tracker from '../components/tracker.astro';
 import '../styles/global.css';
 import Header from '../components/theme/header.tsx';
 import Footer from '../components/theme/footer.tsx';
@@ -38,6 +39,7 @@ const firstName = name ? getFirstName(name) : '';
     <title>Lekk{title ? ` - ${title}` : ''}</title>
     {description && <meta name="description" content={description} />}
     <Metrics />
+    <Tracker />
 </head>
 <body>
 <Header client:load />
